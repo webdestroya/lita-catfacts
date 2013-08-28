@@ -3,7 +3,7 @@ require "lita"
 module Lita
   module Handlers
     class Catfacts < Handler
-      route %r{catfact(|s)}i, :catfacts, command: true, help: { "catfacts" => "Returns a random fact about cats." }
+      route %r{^catfact(|s)$}i, :catfacts, command: true, help: { "catfacts" => "Returns a random fact about cats." }
 
       def catfacts(response)
         resp = http.get('http://catfacts-api.appspot.com/api/facts?number=1')
