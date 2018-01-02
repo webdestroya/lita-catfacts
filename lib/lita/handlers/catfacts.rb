@@ -15,7 +15,7 @@ module Lita
         raise 'ApiError' unless obj['success'] == "true"
 
 
-        response.reply obj['facts'][0]
+        response.reply obj['fact']
 
       rescue
         response.reply "Sorry, I was unable to find any cool facts about cats."
