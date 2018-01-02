@@ -12,9 +12,6 @@ module Lita
         
         obj = MultiJson.load(resp.body)
 
-        raise 'ApiError' unless obj['success'] == "true"
-
-
         response.reply obj['fact']
 
       rescue
