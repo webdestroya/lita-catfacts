@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-catfacts"
-  spec.version       = "0.0.4"
+  spec.version       = "0.1.0"
   spec.authors       = ["Mitch Dempsey"]
   spec.email         = ["mrdempsey@gmail.com"]
   spec.description   = %q{A Lita handler that provides very interesting facts about cats}
